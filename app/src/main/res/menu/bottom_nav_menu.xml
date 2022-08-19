@@ -2,18 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_all_countries"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/all_countries"/>
+        android:id="@+id/navigation_quizzes"
+        android:icon="@drawable/ic_quiz_icon"
+        android:title="@string/quizzes"/>
 
     <item
-        android:id="@+id/navigation_by_continent"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/by_continent" />
-
-    <item
-        android:id="@+id/navigation_favourite_countries"
-        android:icon="@drawable/ic_favourite"
-        android:title="@string/favourite_countries" />
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_history_table"
+        android:title="@string/history" />
 
 </menu>

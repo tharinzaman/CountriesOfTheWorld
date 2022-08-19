@@ -3,23 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_all_countries">
+    app:startDestination="@+id/navigation_quizzes">
 
     <fragment
-        android:id="@+id/navigation_all_countries"
-        android:name="com.example.countriesoftheworld.view.fragments.AllCountriesFragment"
-        android:label="@string/all_countries"
-        tools:layout="@layout/fragment_all_countries" />
+        android:id="@+id/navigation_quizzes"
+        android:name="com.example.countriesoftheworld.view.fragments.QuizzesFragment"
+        android:label="@string/quizzes"
+        tools:layout="@layout/fragment_quizzes" />
 
     <fragment
-        android:id="@+id/navigation_by_continent"
-        android:name="com.example.countriesoftheworld.view.fragments.ByContinentFragment"
-        android:label="@string/by_continent"
-        tools:layout="@layout/fragment_by_continent" />
+        android:id="@+id/navigation_history"
+        android:name="com.example.countriesoftheworld.view.fragments.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
 
-    <fragment
-        android:id="@+id/navigation_favourite_countries"
-        android:name="com.example.countriesoftheworld.view.fragments.FavouriteCountriesFragment"
-        android:label="@string/favourite_countries"
-        tools:layout="@layout/fragment_favourite_countries" />
 </navigation>

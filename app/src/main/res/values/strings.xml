@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">CountriesOfTheWorld</string>
-    <string name="all_countries">All Countries</string>
-    <string name="by_continent">By Continent</string>
-    <string name="favourite_countries">Favourite Countries</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="history">History</string>
 </resources>

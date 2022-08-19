@@ -5,18 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.countriesoftheworld.databinding.FragmentByContinentBinding
+import com.example.countriesoftheworld.databinding.FragmentHistoryBinding
 
-class ByContinentFragment : Fragment() {
+class HistoryFragment : Fragment() {
 
-    private var mBinding: FragmentByContinentBinding? = null
+    private var mBinding: FragmentHistoryBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        mBinding = FragmentByContinentBinding.inflate(inflater, container, false)
+        mBinding = FragmentHistoryBinding.inflate(inflater, container, false)
         return mBinding!!.root
     }
 
