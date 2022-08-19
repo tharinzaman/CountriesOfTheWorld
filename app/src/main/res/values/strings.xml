@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">CountriesOfTheWorld</string>
+
     <string name="quizzes">Quizzes</string>
     <string name="history">History</string>
+
+    <string name="enter_name">Enter your name and then pick a quiz</string>
+    <string name="name">Name</string>
+    <string name="flags">Flags</string>
+    <string name="capital_cities">Capital Cities</string>
+    <string name="languages">Languages</string>
+    <string name="population">Population</string>
+    <string name="continents">Continents</string>
+    <string name="currencies">Currencies</string>
+
 </resources>
