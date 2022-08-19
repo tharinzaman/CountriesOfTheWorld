@@ -13,4 +13,6 @@
     <string name="continents">Continents</string>
     <string name="currencies">Currencies</string>
 
+    <string name="name_warning">Please enter your name</string>
+
 </resources>
