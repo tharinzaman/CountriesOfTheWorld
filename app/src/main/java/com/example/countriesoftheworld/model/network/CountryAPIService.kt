@@ -16,7 +16,7 @@ class CountryAPIService {
         .build()
         .create(CountryAPI::class.java)
 
-    fun getCountry(): Single<Country>{
+    fun getCountry(): Single<List<Country>>{
         return api.getCountry()
     }
 }

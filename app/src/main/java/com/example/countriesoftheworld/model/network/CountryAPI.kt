@@ -8,6 +8,6 @@ import retrofit2.http.GET
 interface CountryAPI {
 
     @GET(Constants.API_ENDPOINT)
-    fun getCountry(): Single<Country>
+    fun getCountry(): Single<List<Country>>
 
 }

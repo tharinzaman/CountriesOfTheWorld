@@ -44,12 +44,6 @@ class QuizFragment : Fragment() {
                     mBinding!!.tvQuestion.text = countryResponse.name.common
                 }
             })
-        mRandomCountryViewModel.loadingError.observe(viewLifecycleOwner,
-            { dataError ->
-                dataError.let {
-                    mBinding!!.tvQuestion.text = "Error Loading"
-                }
-            })
         mRandomCountryViewModel.isCountryLoading.observe(viewLifecycleOwner,
             { isLoading ->
                 isLoading?.let {

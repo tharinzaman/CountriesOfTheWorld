@@ -1,5 +1,6 @@
 package com.example.countriesoftheworld.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.countriesoftheworld.model.entities.Country
@@ -26,18 +27,21 @@ class CountryViewModel : ViewModel() {
             randomCountryAPIService.getCountry()
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribeWith(object: DisposableSingleObserver<Country>(){
-                    override fun onSuccess(value: Country) {
+                .subscribeWith(object: DisposableSingleObserver<List<Country>>(){
+                    override fun onSuccess(value: List<Country>) {
                         isCountryLoading.value = false
-                        countryResponse.value = value
+                        countryResponse.value = value[2]
                         loadingError.value = false
+                        Log.e("Loading success", "Loading success")
                     }
 
                     override fun onError(e: Throwable) {
                         isCountryLoading.value = false
                         loadingError.value = true
                         e.printStackTrace()
+                        Log.e("Loading error", "Loading error")
                     }
+
                 })
         )
     }
