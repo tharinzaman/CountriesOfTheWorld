@@ -6,6 +6,7 @@ data class Country(
     val flag: String,
     val flags: Flags,
     val languages: Languages,
+    val name: Name,
     val population: Int,
     val region: String,
 )
@@ -335,6 +336,10 @@ data class Languages(
     val zho: String,
     val zib: String,
     val zul: String
+)
+
+data class Name(
+    val common: String
 )
 
 data class AED(
